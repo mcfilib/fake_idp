@@ -41,8 +41,9 @@ module FakeIdp
     end
 
     def default_algorithm
-      ENV["ALGORITHM"]&.to_sym ||
-        :sha1
+      x = ENV["ALGORITHM"]
+      return x.to_sym if x
+      :sha1
     end
   end
 end

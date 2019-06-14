@@ -10,7 +10,7 @@ PATH
   specs:
     fake_idp (0.4.0)
       ruby-saml-idp
-      sinatra (~> 2.0.0)
+      sinatra (~> 1.4.8)
 
 GEM
   remote: https://rubygems.org/
@@ -19,9 +19,8 @@ GEM
     dotenv (1.0.2)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
-    mustermann (1.0.3)
-    rack (2.0.5)
-    rack-protection (2.0.4)
+    rack (1.6.11)
+    rack-protection (1.5.5)
       rack
     rake (10.5.0)
     rspec (3.4.0)
@@ -37,13 +36,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    sinatra (2.0.4)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.4)
-      tilt (~> 2.0)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
     systemu (2.6.5)
-    tilt (2.0.8)
+    tilt (2.0.9)
     uuid (2.3.8)
       macaddr (~> 1.0)
 
@@ -51,7 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.11)
+  bundler
   dotenv (~> 1.0)
   fake_idp!
   rake (~> 10.0)
@@ -59,4 +57,4 @@ DEPENDENCIES
   ruby-saml-idp!
 
 BUNDLED WITH
-   1.17.3
+   2.0.2
